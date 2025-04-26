@@ -7,17 +7,29 @@ import Settings from './pages/Settings';
 
 function App() {
   return (
-    <Router> {/* ✅ 반드시 Router로 감싸야 합니다 */}
-      <div className="min-h-screen flex flex-col bg-gray-900">
-        <Navbar />
-        <main className="flex-grow flex justify-center items-center text-center px-4">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/dictionary" element={<Dictionary />} />
-            <Route path="/settings" element={<Settings />} />
-          </Routes>
-        </main>
+    <Router>
+      {/* ① 여기 flex:row + justify-center 만 줘서 전체를 가운데로 */}
+      <div className="min-h-screen bg-gray-900 flex justify-center">
+        
+        {/* ② 실제 너비를 제한하는 래퍼 */}
+        <div className="w-full max-w-4xl flex flex-col">
+          
+          {/* Navbar */}
+          <Navbar />
+
+          {/* 메인 영역 */}
+          <main className="flex-1 flex justify-center items-center">
+            <div className="w-full px-4 text-center">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/news" element={<News />} />
+                <Route path="/dictionary" element={<Dictionary />} />
+                <Route path="/settings" element={<Settings />} />
+              </Routes>
+            </div>
+          </main>
+
+        </div>
       </div>
     </Router>
   );

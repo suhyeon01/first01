@@ -1,4 +1,5 @@
 /* Tailwind 핵심 지시어 - 가장 먼저 선언해야 함 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 @import "tailwindcss";
 @tailwind base;
 @tailwind components;

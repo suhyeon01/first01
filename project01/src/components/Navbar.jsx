@@ -1,10 +1,10 @@
-// src/components/Navbar.jsx
 import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="w-full bg-blue-100 shadow-md">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    // nav 자체를 너비 제한+가운데 배치
+    <nav className="bg-blue-100 shadow-md w-full max-w-4xl mx-auto">
+      <div className="flex justify-between items-center px-6 py-4">
         {/* 왼쪽: 로고 + 쉬운뉴스 */}
         <div className="flex items-center space-x-3">
           <div className="w-8 h-8 rounded-full bg-blue-400"></div>
