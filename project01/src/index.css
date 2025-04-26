@@ -1,4 +1,5 @@
 /* Tailwind 핵심 지시어 - 가장 먼저 선언해야 함 */
+@import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,6 +33,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 h1 {
