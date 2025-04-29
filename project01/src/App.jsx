@@ -17,7 +17,7 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/dictionary" element={<Dictionary />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="/login" element={<Login />} /> {/* 로그인도 Layout 안! */}
+          <Route path="/login" element={<Login />} />
         </Route>
       </Routes>
     </Router>

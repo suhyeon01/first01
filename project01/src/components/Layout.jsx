@@ -4,7 +4,8 @@ import Navbar from "./Navbar";
 
 function Layout() {
   return (
-    <div className="w-screen min-h-screen overflow-x-hidden bg-gradient-to-b from-blue-50 to-cyan-50">
+    <div className="w-screen min-h-screen overflow-x-hidden 
+                  bg-gradient-to-b from-blue-50 to-cyan-50">
       
       {/* 고정된 Navbar */}
       <div className="fixed top-0 left-0 w-full bg-white z-50">
